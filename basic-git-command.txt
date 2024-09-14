@@ -1,0 +1,39 @@
+git commands:
+=============
+To initialise an empty git repository
+git init    
+
+
+To check status of git
+git status (if we add any file in local n check status that file in untracked stages) 
+
+
+To Sent file from untracked to Staged area
+git add file_name 
+ or
+git add . (it means select all files)
+
+
+From staged area to Tracked 
+git commit -m "add" 
+
+
+git restore file_name - To restore the deleted file
+(if i delete local file still am recover from tracked stage)
+-------------------------------------------------------
+
+To push code from local to github:
+Go to github and create a git repository
+name: github-for-devops
+
+git remote add origin https://github.com/prashant9025/git-for-devops.git
+
+git remote -v 
+
+(create PAT in developer settings in github)
+
+git remote set-url origin https://adding_your_personal_access_token@github.com/prashant9025/github-for-devops
+
+git remote -v
+
+git push origin master - To push file from local to github
